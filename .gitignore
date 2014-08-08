@@ -1,0 +1,8 @@
+# Bower folder
+bower_components/
+
+# Grunt folder
+build/
+
+# Node modules
+node_modules/
