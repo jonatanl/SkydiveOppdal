@@ -3,6 +3,7 @@ bower_components/
 
 # Grunt folder
 build/
+coverage/
 
 # Node modules
 node_modules/

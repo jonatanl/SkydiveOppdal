@@ -8,4 +8,6 @@ define(function (require, exports, module) {
 				return settings.apiUrl + '/planes/' + this.id;
 			}
 		});
+
+	return Plane;
 });
