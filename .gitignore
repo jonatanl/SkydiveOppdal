@@ -1,5 +1,9 @@
 # Bower folder
 bower_components/
 
+# Folders used for testing framework
+coverage/
+
+
 # Node modules
 node_modules/
