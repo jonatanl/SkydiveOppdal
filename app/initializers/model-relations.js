@@ -4,14 +4,14 @@ define(function(require) {
         Manifests = require('collections/manifests');
 
         Plane.has().many('manifests', {
-            collection: Manifest,
+            collection: Manifests,
             inverse: 'plane'
         });
 
         Manifest.has().one('plane', {
-            model: Plane,
-            inverse: 'manifests'
+                model: Plane,
+                inverse: 'manifests'
         });
 
-    console.log('Model relations added')
+    console.log('Model relations added');
 });

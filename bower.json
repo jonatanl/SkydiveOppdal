@@ -8,7 +8,7 @@
     "backbone": "~1.1.2",
     "jquery": "~2.1.1",
     "requirejs": "~2.1.14",
-    "mocha": "~1.20.1",
+    "mocha": "~1.21.4",
     "sinon": "~1.10.2",
     "assert": "~0.1.0",
     "supermodel": "~0.0.4",

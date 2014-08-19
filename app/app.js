@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
-  // The root path to run the application through.
   exports.root = "/";
+  require('initializers/model-relations');
 
    var _ = require('underscore'),
         Backbone = require('backbone'),
@@ -8,7 +8,6 @@ define(function(require, exports, module) {
         settings = require('settings');
 
     var Application = new Marionette.Application();
-
     Application.settings = settings;
 
     // Start Backbone.history after all initializers are done.
