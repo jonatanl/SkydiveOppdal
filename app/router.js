@@ -1,19 +1,17 @@
 define(function(require, exports, module) {
   "use strict";
-
   // External dependencies.
-  var Backbone = require("backbone");
+  var Backbone = require("backbone")
+      Marionette = require('marionette');
 
-  // Defining the application router.
-  var Router = Backbone.Router.extend({
-    routes: {
-      "": "index"
+  var Router = Backbone.Marionette.AppRouter.extend({
+    routes : {
+      '': 'index'
     },
-
     index: function() {
-      console.log("Welcome to your / route.");
+      console.log(route);
     }
   });
 
-  module.exports = Router;
+  return Router;
 });

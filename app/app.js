@@ -2,8 +2,7 @@ define(function(require, exports, module) {
   exports.root = "/";
   require('initializers/model-relations');
 
-   var _ = require('underscore'),
-        Backbone = require('backbone'),
+   var  Backbone = require('backbone'),
         Marionette = require('marionette'),
         settings = require('settings');
 
@@ -19,6 +18,9 @@ define(function(require, exports, module) {
             });
         }
     });
+
+    var loadModule = require('modules/load/load');
+    Application.module('loadModule', loadModule);
 
     return Application;
 });
