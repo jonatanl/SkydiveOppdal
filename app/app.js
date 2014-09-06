@@ -10,7 +10,7 @@ define(function(require, exports, module) {
     Application.settings = settings;
 
     // Start Backbone.history after all initializers are done.
-    Application.on('initialize:after', function(options) {
+    Application.on('start', function(options) {
         if (Backbone.history) {
             Backbone.history.start({
                 pushState: false,
@@ -18,9 +18,6 @@ define(function(require, exports, module) {
             });
         }
     });
-
-    var loadModule = require('modules/load/load');
-    Application.module('loadModule', loadModule);
 
     return Application;
 });
