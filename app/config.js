@@ -30,5 +30,9 @@ require.config({
     	}
 	},
 
+  	tpl: {
+    	extension: '.tpl'
+  	},
+
 	deps: ["main"]
 });
