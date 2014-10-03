@@ -5,15 +5,21 @@ define(function(require, exports, module) {
 
     var loadModule = Marionette.Module.extend({
     	initialize: function() {
-    		console.log('Load module');
+    		console.log('Load module');            
     	}
     });
 
-    template = '<div><%= message %></div>'
-   	var ItemView = Backbone.Marionette.ItemView.extend({   	
-   		region: '#main',
-    	template: template,
-    	model: {message: 'test'}
+
+    var Message = Backbone.Model.extend(); 
+    var message = new Message({
+        title: "Title",
+        description: "Description"
+    });
+
+    template = template({message: message})
+   	var ItemView = Backbone.Marionette.ItemView.extend({
+        el: '#main',
+    	template: template
     });
 
     var view = new ItemView();
