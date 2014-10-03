@@ -1,6 +1,4 @@
 define(function(require, exports, module) {
-  "use strict";
-
   var Backbone = require("backbone"),
       Marionette = require('marionette'),
       App = require('app');
@@ -11,7 +9,7 @@ define(function(require, exports, module) {
     },
 
     load: function() {
-      var loadModule = require('modules/load/load');
+      var loadModule = require('modules/load/loads');
       App.module('loadModule', loadModule);
     }
   });

@@ -1,3 +1,3 @@
-<div><h1>Header</h1>
-Message: <%= message.get('title') %>
+<div>
+<h1>This is a plane</h1>
 </div>
