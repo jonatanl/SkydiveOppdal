@@ -5,7 +5,6 @@ define(function (require) {
         settings = require('settings');
 
     var planes = Backbone.Collection.extend({
-
         model: function(attributes, options) {
             return Plane.create(attributes, options);
         },
