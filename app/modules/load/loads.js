@@ -18,7 +18,7 @@ define(function(require, exports, module) {
     });
 
     var collectionView = Marionette.CollectionView.extend({
-        tagName: '#main',
+        el: '#main',
         childView: loadView
     });
     return loadModule;
