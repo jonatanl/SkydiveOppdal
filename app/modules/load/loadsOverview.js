@@ -12,7 +12,7 @@ define(function(require, exports, module) {
     });
 
     var planes = new Planes();
-    planes.fetch().then(function(test) {
+    planes.fetch().then(function() {
         var view = new collectionView({collection: planes});
         view.render();
     });

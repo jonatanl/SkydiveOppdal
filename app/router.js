@@ -9,7 +9,7 @@ define(function(require, exports, module) {
     },
 
     load: function() {
-      var loadModule = require('modules/load/loads');
+      var loadModule = require('modules/load/loadsOverview');
       App.module('loadModule', loadModule);
     }
   });

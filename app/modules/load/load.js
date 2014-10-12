@@ -1,7 +1,7 @@
 define(function(require, exports, module) {
     var Marionette = require('marionette'),
     	Backbone = require('backbone'),
-    	template = require('tpl!./load'),
+    	template = require('tpl!./loadsOverview'),
         Planes = require('collections/planes');
 
     template = template();
